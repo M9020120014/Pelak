@@ -1,6 +1,6 @@
 {
   "name": "pelak",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -21,9 +21,7 @@
     "docker:delete": "docker system prune -a --volumes -f",
     "docker:health": "curl -f http://localhost:3000 || echo 'Container not responding'",
     "docker:rebuild": "npm run docker:stop && npm run docker:build && npm run docker:run",
-
     "version:set": "npm version && git push && git push --tags"
-
   },
   "dependencies": {
     "@headlessui/react": "^2.2.7",
