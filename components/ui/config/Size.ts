@@ -1,0 +1,42 @@
+import { /*PropsMap,*/ ItemMap, /*ConfigPropsObject,*/ ConfigObject, /*PropsObject*/ } from "../Pelak";
+
+/* --- Size Configuration ----------------------------------------------------------------------- */
+export const SizeConfig = {
+  Items: {
+    sm: "h-028-6 px-012-3 has-[>svg]:px-008-2 [&_svg:not([class*='size-'])]:size-014-Z",
+    md: "h-034-7 px-014-Z has-[>svg]:px-010-D [&_svg:not([class*='size-'])]:size-018-4",
+    lg: "h-040-8 px-024-5 has-[>svg]:px-012-3 [&_svg:not([class*='size-'])]:size-024-5",
+    smIcon: "p-002-T size-028-6",
+    mdIcon: "p-002-T size-034-7",
+    lgIcon: "p-002-T size-040-8",
+    none: "",
+  },
+  Default: "md"
+} as const satisfies ConfigObject<ItemMap>
+
+/* --- Rounded Configuration -------------------------------------------------------------------- */
+export const RoundedConfig = {
+  Items: {
+    xs: "rounded-xs",
+    sm: "rounded-sm",
+    md: "rounded-md",
+    lg: "rounded-lg",
+    xl: "rounded-xl",
+    full: "rounded-full",
+    none: "",
+  },
+  Default: "sm" 
+} as const satisfies ConfigObject<ItemMap>
+
+/* --- Svg Size Configuration ------------------------------------------------------------------- */
+export const SvgSizeConfig = {
+  Base: 0.4,
+  Items: {
+    xs: 1,
+    sm: 2,
+    md: 3,
+    lg: 4,
+    xl: 5,
+  },
+  Default: "md" 
+} as const satisfies ConfigObject<ItemMap>
